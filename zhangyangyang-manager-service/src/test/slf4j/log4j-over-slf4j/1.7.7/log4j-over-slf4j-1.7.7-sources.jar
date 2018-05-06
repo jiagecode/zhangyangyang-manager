@@ -1,0 +1,1794 @@
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto
+}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+	font-family: Lato,sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+.blog-header .intro,.h1,.h2,.landing-page-header .intro,.news-grid-item h2,.news-grid-item.instagram .content,.news-grid-item.tweet .content,.page-contact .contact-block h2,.page-contact .location-details p,.sector-header .intro,.statement,.work-cafe-rouge .statement p,.work-taylors .statement p,body,h1,h2 {
+	font-family: Heiti SC,Helvetica Neue,Open Sans,STHeiti,Microsoft Yahei,'\9ED1\4F53',Arial,sans-serif
+}
+
+body {
+	margin: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+	display: block
+}
+
+audio,canvas,progress,video {
+	display: inline-block;
+	vertical-align: baseline
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+[hidden],template {
+	display: none
+}
+
+a {
+	background-color: transparent;
+	-webkit-tap-highlight-color: transparent
+}
+
+a:active,a:hover {
+	outline: 0
+}
+
+abbr[title] {
+	border-bottom: 1px dotted
+}
+
+b,optgroup,strong {
+	font-weight: 700
+}
+
+dfn {
+	font-style: italic
+}
+
+h1 {
+	font-size: 2em
+}
+
+mark {
+	background: #ff0;
+	color: #000
+}
+
+small {
+	font-size: 80%
+}
+
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+.affix,.back-btn,.jd-logo {
+	position: fixed
+}
+
+sup {
+	top: -.5em
+}
+
+sub {
+	bottom: -.25em
+}
+
+img,legend {
+	border: 0
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0
+}
+
+pre,textarea {
+	overflow: auto
+}
+
+code,kbd,pre,samp {
+	font-family: monospace,monospace;
+	font-size: 1em
+}
+
+button,input,optgroup,select,textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0
+}
+
+button {
+	overflow: visible
+}
+
+button,select {
+	text-transform: none
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+
+button[disabled],html input[disabled] {
+	cursor: default
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+input {
+	line-height: normal
+}
+
+input[type=checkbox],input[type=radio] {
+	box-sizing: border-box;
+	padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+	height: auto
+}
+
+.container,body,html {
+	width: 100%;
+	height: 100%
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+fieldset {
+	border: 1px solid silver
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.clearfix:after,.clearfix:before {
+	content: " ";
+	display: table
+}
+
+.clearfix:after {
+	clear: both
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.pull-right {
+	float: right!important
+}
+
+.pull-left {
+	float: left!important
+}
+
+.hide {
+	display: none!important
+}
+
+.show {
+	display: block!important
+}
+
+.invisible {
+	visibility: hidden
+}
+
+.text-hide {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0
+}
+
+.hidden {
+	display: none!important;
+	visibility: hidden!important
+}
+
+.avatar,.logo,.photo,.pic,div.page.bedroom,div.page.door .door-bg,div.page.kitchen,div.page.livingRoom,div.page.wc {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+.arrow-down,.door-dog,.image,.jd-logo,.overlays .overlay.goods,.text-logo,.text-logo>div,div.page.bedroom .air-cleaner,div.page.bedroom .br-airCondition,div.page.bedroom .br-cup,div.page.bedroom .br-elec,div.page.bedroom .br-wall .wall-1,div.page.bedroom .br-wall .wall-2,div.page.bedroom .jd-dog,div.page.bedroom a.bed,div.page.bedroom a.bed-table,div.page.bedroom a.bed-table-1,div.page.bedroom div.bed,div.page.door .door-l,div.page.door .door-r,div.page.kitchen .bingxiang,div.page.kitchen .chaxianban,div.page.kitchen .chouyouyan,div.page.kitchen .deng,div.page.kitchen .dianfanbao,div.page.kitchen .fire,div.page.kitchen .guizi,div.page.kitchen .guo,div.page.kitchen .jd-dog,div.page.kitchen .ranqiji,div.page.kitchen .red-lamp,div.page.kitchen .weibolu,div.page.kitchen .yanwu,div.page.livingRoom .TVTable,div.page.livingRoom .airCondition,div.page.livingRoom .ball-1,div.page.livingRoom .ball-2,div.page.livingRoom .ball-3,div.page.livingRoom .bottom-lines,div.page.livingRoom .cleaner,div.page.livingRoom .cleaner .ashes,div.page.livingRoom .door-1,div.page.livingRoom .door-2,div.page.livingRoom .door-3,div.page.livingRoom .fruit,div.page.livingRoom .hand,div.page.livingRoom .intro,div.page.livingRoom .intro .intro-text,div.page.livingRoom .intro .intro-title,div.page.livingRoom .intro .more a,div.page.livingRoom .jd-dog,div.page.livingRoom .livingRoom-wall-1,div.page.livingRoom .livingRoom-wall-1 .lines-v,div.page.livingRoom .sofa,div.page.livingRoom .television,div.page.livingRoom .wall-dot-1,div.page.livingRoom .wall-dot-2,div.page.wc .chaxianban-2,div.page.wc .jd-dog,div.page.wc .kongtiao,div.page.wc .matong,div.page.wc .star,div.page.wc .water,div.page.wc .xishouye,div.page.wc .xiyiji {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+*,:after,:before {
+	box-sizing: border-box
+}
+
+a,a:active,a:focus,a:visited {
+	cursor: pointer;
+	outline: 0
+}
+
+ol,ul {
+	list-style: none
+}
+
+article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+
+@-webkit-keyframes arrow {
+	0%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		opacity: 0
+	}
+
+	50% {
+		-webkit-transform: translate3d(0,50%,0);
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes door-l {
+	0% {
+		-webkit-transform: perspective(600px) rotateY(0)
+	}
+
+	100% {
+		-webkit-transform: perspective(600px) rotateY(60deg)
+	}
+}
+
+@-webkit-keyframes door-r {
+	0% {
+		-webkit-transform: perspective(600px) rotateY(0)
+	}
+
+	100% {
+		-webkit-transform: perspective(600px) rotateY(-60deg)
+	}
+}
+
+@-webkit-keyframes hand {
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes bottom-lines {
+	0%,100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+
+	25% {
+		-webkit-transform: translateX(-30px);
+		transform: translateX(-30px)
+	}
+
+	75% {
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px)
+	}
+}
+
+@-webkit-keyframes livingRoom-wall-lines-v {
+	0% {
+		-webkit-transform: translate3d(0,0,0)
+	}
+
+	100% {
+		-webkit-transform: translate3d(185px,0,0)
+	}
+}
+
+@-webkit-keyframes livingRoom-wall-lines-h {
+	0%,100% {
+		-webkit-transform: scaleX(.4)
+	}
+
+	25%,75% {
+		-webkit-transform: scaleX(.8)
+	}
+
+	50% {
+		-webkit-transform: scaleX(1.2)
+	}
+}
+
+@-webkit-keyframes cleaner-move {
+	0% {
+		-webkit-transform: translate3d(0,0,0) scaleX(1)
+	}
+
+	49.99% {
+		-webkit-transform: translate3d(-150px,0,0) scaleX(1)
+	}
+
+	50% {
+		-webkit-transform: translate3d(-150px,0,0) scaleX(-1)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0) scaleX(-1)
+	}
+}
+
+@-webkit-keyframes ashes-move {
+	0%,50% {
+		-webkit-transform: translate3d(0,0,0)
+	}
+
+	25% {
+		-webkit-transform: translate3d(0,-3px,0)
+	}
+
+	75% {
+		-webkit-transform: translate3d(0,3px,0)
+	}
+}
+
+@-webkit-keyframes ball-scale {
+	0% {
+		-webkit-transform: scale(1)
+	}
+
+	50% {
+		-webkit-transform: scale(.3)
+	}
+}
+
+@-webkit-keyframes text-logo-1 {
+	50% {
+		-webkit-transform: translate3d(0,-20px,0) scale(1)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0) scale(1)
+	}
+}
+
+@-webkit-keyframes text-logo-2 {
+	50% {
+		-webkit-transform: translate3d(-20px,0,0) scale(1)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0) scale(1)
+	}
+}
+
+@-webkit-keyframes text-logo-3 {
+	50% {
+		-webkit-transform: translate3d(0,20px,0) scale(1)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0) scale(1)
+	}
+}
+
+@-webkit-keyframes text-logo-4 {
+	50% {
+		-webkit-transform: translate3d(20px,0,0) scale(1)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0) scale(1)
+	}
+}
+
+@-webkit-keyframes logo-swing {
+	25% {
+		-webkit-transform: rotate(10deg)
+	}
+
+	100%,50% {
+		-webkit-transform: rotate(0)
+	}
+
+	75% {
+		-webkit-transform: rotate(-10deg)
+	}
+}
+
+@-webkit-keyframes br-wall-1 {
+	0%,100% {
+		-webkit-transform: translate3d(0,0,0)
+	}
+
+	50% {
+		-webkit-transform: translate3d(-80px,0,0)
+	}
+}
+
+@-webkit-keyframes br-wall-2 {
+	0%,100% {
+		-webkit-transform: translate3d(0,0,0)
+	}
+
+	50% {
+		-webkit-transform: translate3d(80px,0,0)
+	}
+}
+
+@-webkit-keyframes yanwu {
+	0% {
+		-webkit-transform: scale(.7,.7) translate3d(0,0,0);
+		opacity: 1
+	}
+
+	50% {
+		-webkit-transform: scale(.9,.9) translate3d(1px,3px,0);
+		opacity: 1
+	}
+
+	100% {
+		-webkit-transform: scale(.95,.95) translate3d(-1px,-3px,0);
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fire {
+	0% {
+		-webkit-transform: scale(.8,.8,.8);
+		opacity: .8
+	}
+
+	100% {
+		-webkit-transform: scale(1,1,1);
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes weibolu {
+	0%,100% {
+		background-image: url(../img/weibolu-hover.png);
+		opacity: .8
+	}
+
+	50% {
+		background-image: url(../img/weibolu-hover.png);
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes dot-1 {
+	25% {
+		-webkit-transform: translate3d(0,-30px,0)
+	}
+
+	50% {
+		-webkit-transform: translate3d(0,20px,0)
+	}
+
+	75% {
+		-webkit-transform: translate3d(0,70px,0)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0)
+	}
+}
+
+@-webkit-keyframes dot-2 {
+	25% {
+		-webkit-transform: translate3d(0,30px,0)
+	}
+
+	50% {
+		-webkit-transform: translate3d(0,-20px,0)
+	}
+
+	75% {
+		-webkit-transform: translate3d(0,-70px,0)
+	}
+
+	100% {
+		-webkit-transform: translate3d(0,0,0)
+	}
+}
+
+@-webkit-keyframes redLamp {
+	0%,100% {
+		opacity: 1
+	}
+}
+
+body,html {
+	color: #000
+}
+
+.container {
+	-webkit-overflow-scrolling: touch
+}
+
+div.page {
+	-webkit-transform-origin: 0 0;
+	-webkit-animation: fadein 1s ease
+}
+
+.jd-logo {
+	z-index: 1;
+	width: 60px;
+	height: 45.5px;
+	right: 10px;
+	top: 0;
+	background-image: url(../img/logo.png);
+	-webkit-transform-origin: top center
+}
+
+.jd-logo.ani {
+	-webkit-animation: logo-swing 2s infinite linear
+}
+
+.jd-dog {
+	background-image: url(../img/jd-dog.png)
+}
+
+.jd-dog:active {
+	background-image: url(../img/jd-dog-a.png)
+}
+
+.back-btn {
+	left: 15px;
+	bottom: 15px;
+	width: 73.5px;
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+	border: 1px solid #000;
+	display: block;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	z-index: 5
+}
+
+.back-btn:active {
+	background-color: rgba(0,0,0,.2)
+}
+
+.arrow-down {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	width: 5px;
+	height: 14px;
+	background-image: url(../img/arrow-down.png);
+	left: 50%;
+	margin-left: -2.5px;
+	top: -23px;
+	-webkit-animation: arrow 1s infinite;
+	opacity: .2
+}
+
+#landscape {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	background-color: #000
+}
+
+.door-dog,.text-logo {
+	position: absolute;
+	display: block;
+	z-index: 5
+}
+
+#landscape .pic {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	background-image: url(../img/landscape_tips_320.jpg)
+}
+
+.text-logo {
+	left: 72px;
+	top: 144px;
+	width: 175px;
+	height: 50.5px
+}
+
+.text-logo>div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/zhihuijia.png);
+	-webkit-transform-origin: 50% 50%
+}
+
+.text-logo>div:nth-child(1) {
+	-webkit-animation: text-logo-1 3s infinite 1s
+}
+
+.text-logo>div:nth-child(2) {
+	-webkit-animation: text-logo-2 3s infinite 1s
+}
+
+.text-logo>div:nth-child(3) {
+	-webkit-animation: text-logo-3 3s infinite 1s
+}
+
+.text-logo>div:nth-child(4) {
+	-webkit-animation: text-logo-4 3s infinite 1s
+}
+
+.text-logo.pre>div:nth-child(1) {
+	-webkit-transform: translate3d(0,0,0) scale(1)
+}
+
+.text-logo.pre>div:nth-child(2) {
+	-webkit-transform: translate3d(0,0,0) scale(.97029703)
+}
+
+.text-logo.pre>div:nth-child(3) {
+	-webkit-transform: translate3d(0,0,0) scale(.94059406)
+}
+
+.text-logo.pre>div:nth-child(4) {
+	-webkit-transform: translate3d(0,0,0) scale(.91089109)
+}
+
+.door-dog {
+	left: 92px;
+	top: 223.5px;
+	width: 137px;
+	height: 128.5px;
+	background-image: url(../img/door-dog.png)
+}
+
+div.page.door {
+	width: 320px;
+	height: 504px;
+	position: absolute;
+	top: 0;
+	left: 50%
+}
+
+div.page.door .door-con {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 6
+}
+
+div.page.door .door-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	background-image: url(../img/door-bg.png)
+}
+
+div.page.door .door-l,div.page.door .door-r {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	top: 50px;
+	width: 143px;
+	height: 402px
+}
+
+div.page.door .door-l {
+	left: 18px;
+	background-image: url(../img/door-l.png);
+	-webkit-transform-origin: left
+}
+
+div.page.door .door-r {
+	left: 159px;
+	background-image: url(../img/door-r.png);
+	-webkit-transform-origin: right
+}
+
+div.page.door.ani {
+	opacity: 0;
+	-webkit-animation: fadeOut 2s linear
+}
+
+div.page.door.ani .door-l {
+	-webkit-perspective: 600;
+	-webkit-transform: perspective(600px) rotateY(60deg);
+	-webkit-animation: door-l 2s ease
+}
+
+div.page.door.ani .door-r {
+	-webkit-perspective: 600;
+	-webkit-transform: perspective(600px) rotateY(-60deg);
+	-webkit-animation: door-r 2s ease
+}
+
+div.page.livingRoom .bottom-lines,div.page.livingRoom .hand {
+	display: block;
+	z-index: 5;
+	-webkit-transform: translate3d(150px,0,0);
+	opacity: 1
+}
+
+div.page.livingRoom {
+	width: 1819px;
+	height: 504px;
+	background-image: url(../img/livingRoom-bg.jpg);
+	position: relative
+}
+
+div.page.livingRoom .hand {
+	position: absolute;
+	left: 86.5px;
+	top: 358px;
+	width: 21px;
+	height: 34px;
+	background-image: url(../img/hand.png);
+	-webkit-animation: hand 1.5s infinite linear
+}
+
+div.page.livingRoom .jd-dog {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1259.5px;
+	top: 380px;
+	width: 67px;
+	height: 62.5px
+}
+
+div.page.livingRoom .bottom-lines {
+	position: absolute;
+	left: -100px;
+	top: 440px;
+	width: 286px;
+	height: 61.5px;
+	background-image: url(../img/cover-lines.png);
+	-webkit-animation: bottom-lines 6s infinite linear
+}
+
+div.page.livingRoom .intro {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 362.5px;
+	top: 104.5px;
+	width: 250px;
+	height: 290px
+}
+
+div.page.livingRoom .intro .intro-title {
+	width: 76.5px;
+	height: 14.5px;
+	background-image: url(../img/intro-title.png);
+	margin: 20px auto 30px
+}
+
+div.page.livingRoom .intro .intro-text {
+	width: 250px;
+	height: 182.5px;
+	background-image: url(../img/intro-text.png)
+}
+
+div.page.livingRoom .intro p {
+	font-size: 12px;
+	line-height: 19px;
+	text-align: justify
+}
+
+div.page.livingRoom .intro .more a {
+	display: block;
+	width: 75px;
+	height: 11.5px;
+	background-image: url(../img/more.png);
+	margin-top: 17px;
+	color: inherit;
+	text-decoration: none
+}
+
+.get-ticket .toget,.get-ticket .toguide {
+	font-size: 12px;
+	font-family: microsoft yahei;
+	color: #101010
+}
+
+div.page.livingRoom .livingRoom-wall-1 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 879px;
+	top: 149px;
+	width: 247.5px;
+	height: 153px;
+	overflow: hidden
+}
+
+div.page.livingRoom .livingRoom-wall-1 .lines-v {
+	position: absolute;
+	left: -184px;
+	top: 0;
+	width: 500px;
+	height: 153.5px;
+	background-image: url(../img/livingRoom-wall-1-lines-v.png);
+	background-position: left 0;
+	-webkit-animation: livingRoom-wall-lines-v 3s linear infinite
+}
+
+div.page.livingRoom .sofa {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 680px;
+	top: 272.5px;
+	width: 229.5px;
+	height: 146px;
+	background-image: url(../img/sofa.png)
+}
+
+div.page.livingRoom .fruit {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 805px;
+	top: 301px;
+	width: 39px;
+	height: 39.5px;
+	background-image: url(../img/fruit.png)
+}
+
+div.page.livingRoom .airCondition {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1117px;
+	top: 202.5px;
+	width: 35.5px;
+	height: 113.5px;
+	background-image: url(../img/airCondition.png)
+}
+
+div.page.livingRoom .airCondition:active {
+	background-image: url(../img/airCondition-a.png)
+}
+
+div.page.livingRoom .TVTable {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1129px;
+	top: 280px;
+	width: 134.5px;
+	height: 122.5px;
+	background-image: url(../img/TV-table.png)
+}
+
+div.page.livingRoom .television {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1173px;
+	top: 201.5px;
+	width: 79.5px;
+	height: 89.5px;
+	background-image: url(../img/television.png)
+}
+
+div.page.livingRoom .television:active {
+	background-image: url(../img/television-a.png)
+}
+
+div.page.livingRoom .wall-dot-1,div.page.livingRoom .wall-dot-2 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1253.5px;
+	width: 111px;
+	height: 335px;
+	background-image: url(../img/dot-1.png)
+}
+
+div.page.livingRoom .wall-dot-1 {
+	top: 32px;
+	-webkit-animation: dot-1 12s infinite linear
+}
+
+div.page.livingRoom .wall-dot-2 {
+	top: 77px;
+	-webkit-animation: dot-2 12s infinite linear
+}
+
+div.page.livingRoom .cleaner {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1047.5px;
+	top: 402.5px;
+	width: 53px;
+	height: 29px;
+	background-image: url(../img/cleaner.png);
+	-webkit-animation: cleaner-move 8s infinite linear;
+	-webkit-transform: translate3d(0,0,0) scaleX(1)
+}
+
+div.page.livingRoom .cleaner:active {
+	background-image: url(../img/cleaner-a.png)
+}
+
+div.page.livingRoom .cleaner .ashes {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: -5px;
+	top: -3px;
+	width: 58.5px;
+	height: 42.5px;
+	background-image: url(../img/ashes.png);
+	-webkit-animation: ashes-move 1s infinite linear;
+	-webkit-transform: translate3d(0,0,0)
+}
+
+div.page.livingRoom .ball-1,div.page.livingRoom .ball-2,div.page.livingRoom .ball-3 {
+	z-index: 5;
+	display: block;
+	position: absolute;
+	-webkit-animation: ball-scale 3s infinite linear;
+	-webkit-transform: scale(1)
+}
+
+div.page.livingRoom .ball-1 {
+	left: 1485.5px;
+	top: 201.5px;
+	width: 57px;
+	height: 57px;
+	background-image: url(../img/ball-1.png)
+}
+
+div.page.livingRoom .ball-2 {
+	left: 1639px;
+	top: 132.5px;
+	width: 29.5px;
+	height: 29.5px;
+	background-image: url(../img/ball-2.png)
+}
+
+div.page.livingRoom .ball-3 {
+	left: 1706.5px;
+	top: 278px;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/ball-3.png)
+}
+
+div.page.livingRoom .door-1 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1418.5px;
+	top: 122px;
+	width: 57.5px;
+	height: 293px;
+	background-position: left center
+}
+
+div.page.livingRoom .door-1 .arrow-down {
+	left: 13px;
+	top: 101px
+}
+
+div.page.livingRoom .door-2 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1603px;
+	top: 192px;
+	width: 50px;
+	height: 97.5px
+}
+
+div.page.livingRoom .door-2 .arrow-down {
+	left: 6px;
+	top: 21px
+}
+
+div.page.livingRoom .door-3 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 1737px;
+	top: 144.5px;
+	width: 40.5px;
+	height: 217px;
+	background-position: left center
+}
+
+div.page.livingRoom .door-3 .arrow-down {
+	left: 30px;
+	top: 80px
+}
+
+div.page.bedroom {
+	width: 656px;
+	height: 504px;
+	background-image: url(../img/bedroom-bg.png)
+}
+
+div.page.bedroom .jd-dog {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 557.5px;
+	top: 392.5px;
+	width: 67px;
+	height: 62.5px
+}
+
+div.page.bedroom .br-wall {
+	position: absolute;
+	left: 56.5px;
+	top: 22px;
+	width: 543.5px;
+	height: 203px;
+	overflow: hidden
+}
+
+div.page.bedroom .br-wall .wall-1 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	top: 0;
+	width: 199.5px;
+	height: 203px;
+	background-image: url(../img/br-wall-bg-1.png);
+	-webkit-animation: br-wall-1 8s infinite linear
+}
+
+div.page.bedroom .br-wall .wall-2 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 199.5px;
+	top: 0;
+	width: 344px;
+	height: 203px;
+	background-image: url(../img/br-wall-bg-2.png);
+	-webkit-animation: br-wall-2 8s infinite linear
+}
+
+div.page.bedroom div.bed {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 82.5px;
+	top: 108.5px;
+	width: 492px;
+	height: 287.5px;
+	background-image: url(../img/bed.png)
+}
+
+div.page.bedroom a.bed {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 132.5px;
+	top: 122.5px;
+	width: 382px;
+	height: 267.5px
+}
+
+div.page.bedroom a.bed-table {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 82.5px;
+	top: 108.5px;
+	width: 85px;
+	height: 192.5px
+}
+
+div.page.bedroom a.bed-table-1 {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 492.5px;
+	top: 141.5px;
+	width: 82px;
+	height: 162.5px
+}
+
+div.page.bedroom .br-airCondition {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 201.5px;
+	top: 30px;
+	width: 108.5px;
+	height: 33.5px;
+	background-image: url(../img/br-airCondition.png)
+}
+
+div.page.bedroom .br-airCondition:active {
+	background-image: url(../img/br-airCondition-a.png)
+}
+
+div.page.bedroom .br-airCondition .arrow-down {
+	top: -25px;
+	left: 10px
+}
+
+div.page.bedroom .br-elec {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 71.5px;
+	top: 190px;
+	width: 14px;
+	height: 21px;
+	background-image: url(../img/br-elec.png)
+}
+
+div.page.bedroom .br-elec:active {
+	background-image: url(../img/br-elec-a.png)
+}
+
+div.page.bedroom .br-cup {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 136.5px;
+	top: 143.5px;
+	width: 20.5px;
+	height: 32.5px;
+	background-image: url(../img/br-cup.png)
+}
+
+div.page.bedroom .br-cup:active {
+	background-image: url(../img/br-cup-a.png)
+}
+
+div.page.bedroom .air-cleaner {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 583.5px;
+	top: 231.5px;
+	width: 58px;
+	height: 151.5px;
+	background-image: url(../img/air-cleaner.png)
+}
+
+div.page.bedroom .air-cleaner:active {
+	background-image: url(../img/air-cleaner-a.png)
+}
+
+div.page.bedroom .air-cleaner .arrow-down {
+	top: -25px;
+	left: 10px
+}
+
+div.page.kitchen {
+	width: 810px;
+	height: 504px;
+	background-image: url(../img/kitchen.jpg);
+	position: relative
+}
+
+div.page.kitchen .bingxiang,div.page.kitchen .chaxianban,div.page.kitchen .deng,div.page.kitchen .dianfanbao,div.page.kitchen .fire,div.page.kitchen .guizi,div.page.kitchen .guo,div.page.kitchen .jd-dog,div.page.kitchen .ranqiji,div.page.kitchen .red-lamp,div.page.kitchen .weibolu,div.page.kitchen .yanwu {
+	display: block;
+	position: absolute
+}
+
+div.page.kitchen .jd-dog {
+	z-index: 5;
+	left: 631.5px;
+	top: 438px;
+	width: 67px;
+	height: 62.5px
+}
+
+div.page.kitchen .bingxiang {
+	z-index: 5;
+	left: 81px;
+	top: 198px;
+	width: 109px;
+	height: 289.5px;
+	background-image: url(../img/bingxiang.png)
+}
+
+div.page.kitchen .bingxiang:active {
+	background-image: url(../img/bingxiang-a.png)
+}
+
+div.page.kitchen .bingxiang .arrow-down {
+	left: 5px;
+	top: -25px
+}
+
+div.page.kitchen .weibolu {
+	z-index: 5;
+	left: 245px;
+	top: 128px;
+	width: 125.5px;
+	height: 93.5px;
+	background-image: url(../img/weibolu.png);
+	-webkit-animation: weibolu 3s infinite linear 3s
+}
+
+div.page.kitchen .weibolu .arrow-down {
+	left: -8px;
+	top: -38px
+}
+
+div.page.kitchen .chaxianban {
+	z-index: 5;
+	left: 201px;
+	top: 290.5px;
+	width: 14px;
+	height: 24px;
+	background-image: url(../img/chaxianban.png)
+}
+
+div.page.kitchen .chaxianban:active {
+	background-image: url(../img/chaxianban-a.png)
+}
+
+div.page.kitchen .chaxianban .arrow-down {
+	left: 6px;
+	top: -28px
+}
+
+div.page.kitchen .dianfanbao {
+	z-index: 5;
+	left: 245px;
+	top: 279px;
+	width: 67.5px;
+	height: 70px;
+	background-image: url(../img/dianfanbao.png)
+}
+
+div.page.kitchen .dianfanbao:active {
+	background-image: url(../img/dianfanbao-a.png)
+}
+
+div.page.kitchen .dianfanbao .arrow-down {
+	left: 8px;
+	top: -28px
+}
+
+div.page.kitchen .guizi {
+	z-index: 5;
+	left: 397px;
+	top: 373px;
+	width: 96px;
+	height: 97px;
+	background-image: url(../img/guizi.png)
+}
+
+div.page.kitchen .guizi:active {
+	background-image: url(../img/guizi-a.png)
+}
+
+div.page.kitchen .guizi .arrow-down {
+	left: 8px;
+	top: -28px
+}
+
+div.page.kitchen .chouyouyan {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 489.5px;
+	top: 103px;
+	width: 207.5px;
+	height: 141px;
+	background-image: url(../img/chouyouyan.png)
+}
+
+div.page.kitchen .chouyouyan:active {
+	background-image: url(../img/chouyouyan-a.png)
+}
+
+div.page.kitchen .chouyouyan .arrow-down {
+	left: 70px;
+	top: -30px
+}
+
+div.page.kitchen .red-lamp {
+	z-index: 5;
+	left: 602px;
+	top: 204px;
+	width: 3px;
+	height: 3px;
+	opacity: 0;
+	border-radius: 50%;
+	background: #df1f1f;
+	-webkit-animation: redLamp 1s infinite linear 3s
+}
+
+div.page.kitchen .ranqiji {
+	z-index: 5;
+	left: 498px;
+	top: 326px;
+	width: 246.5px;
+	height: 24px;
+	background-image: url(../img/ranqiji.png)
+}
+
+div.page.kitchen .ranqiji:active {
+	background-image: url(../img/ranqiji-a.png)
+}
+
+div.page.kitchen .ranqiji .arrow-down {
+	left: 108px;
+	top: -38px
+}
+
+div.page.kitchen .guo {
+	left: 513px;
+	top: 305px;
+	width: 76px;
+	height: 29.5px;
+	background-image: url(../img/guo.png);
+	z-index: 10
+}
+
+div.page.kitchen .deng {
+	z-index: 5;
+	left: 366.5px;
+	top: 1px;
+	width: 74px;
+	height: 32px;
+	background-image: url(../img/deng.png)
+}
+
+div.page.kitchen .fire {
+	z-index: 5;
+	left: 524px;
+	top: 308px;
+	width: 56px;
+	height: 36.5px;
+	background-image: url(../img/fire.png);
+	opacity: 0;
+	-webkit-animation: fire 2s infinite linear 3s
+}
+
+div.page.kitchen .yanwu {
+	left: 494px;
+	top: 213px;
+	width: 113px;
+	height: 113px;
+	background-image: url(../img/yanwu.png);
+	z-index: 15;
+	-webkit-transform-origin: bottom center;
+	opacity: 0;
+	-webkit-animation: yanwu 3s infinite linear 3.5s
+}
+
+div.page.wc {
+	width: 659px;
+	height: 504px;
+	background-image: url(../img/wc.jpg);
+	position: relative
+}
+
+div.page.wc .chaxianban-2,div.page.wc .jd-dog,div.page.wc .kongtiao,div.page.wc .matong,div.page.wc .water,div.page.wc .xishouye,div.page.wc .xiyiji {
+	display: block;
+	z-index: 5;
+	position: absolute
+}
+
+div.page.wc .water {
+	left: 121px;
+	top: 155.5px;
+	width: 60.5px;
+	height: 213px;
+	background-image: url(../img/water.gif)
+}
+
+div.page.wc .jd-dog {
+	left: 435.5px;
+	top: 411.5px;
+	width: 67px;
+	height: 62.5px
+}
+
+div.page.wc .xiyiji {
+	left: 248px;
+	top: 239px;
+	width: 110px;
+	height: 153px;
+	background-image: url(../img/xiyiji.png)
+}
+
+div.page.wc .xiyiji:active {
+	background-image: url(../img/xiyiji-a.png)
+}
+
+div.page.wc .xiyiji .arrow-down {
+	left: 8px;
+	top: -28px
+}
+
+div.page.wc .xishouye {
+	left: 487px;
+	top: 248px;
+	width: 13.5px;
+	height: 23px;
+	background-image: url(../img/xishouye.png)
+}
+
+div.page.wc .kongtiao {
+	left: 0;
+	top: -7.5px;
+	width: 138.5px;
+	height: 134.5px;
+	background-image: url(../img/kongtiao.png)
+}
+
+div.page.wc .kongtiao:active {
+	background-image: url(../img/kongtiao-a.png)
+}
+
+div.page.wc .kongtiao .arrow-down {
+	left: 102px;
+	top: 24px
+}
+
+div.page.wc .chaxianban-2 {
+	left: 529px;
+	top: 184.5px;
+	width: 19px;
+	height: 27.5px;
+	background-image: url(../img/chaxianban-2.png)
+}
+
+div.page.wc .chaxianban-2:active {
+	background-image: url(../img/chaxianban-2-a.png)
+}
+
+div.page.wc .matong {
+	left: 514px;
+	top: 316px;
+	width: 140.5px;
+	height: 137.5px;
+	background-image: url(../img/matong.png)
+}
+
+div.page.wc .matong:active {
+	background-image: url(../img/matong-a.png)
+}
+
+div.page.wc .matong .arrow-down {
+	left: 112px;
+	top: -16px
+}
+
+div.page.wc .star {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 253px;
+	top: 70px;
+	width: 100px;
+	height: 168.5px
+}
+
+.get-ticket,.no-ticket {
+	position: absolute;
+	margin-left: -123.75px;
+	background-size: 100%;
+	width: 247.5px;
+	left: 50%;
+	top: 50%
+}
+
+.no-ticket {
+	height: 146px;
+	margin-top: -73px;
+	background-image: url(../img/no-ticket.png)
+}
+
+.get-ticket {
+	height: 158px;
+	margin-top: -79px;
+	background-image: url(../img/get-ticket.png)
+}
+
+.get-ticket .toguide {
+	position: absolute;
+	left: 30px;
+	top: 110px;
+	display: block;
+	width: 100px;
+	height: 25px
+}
+
+.get-ticket .toget {
+	position: absolute;
+	left: 140px;
+	top: 100px;
+	display: block;
+	width: 80px;
+	height: 30px
+}
+
+.guide {
+	width: 247.5px;
+	height: 202px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -123.75px;
+	margin-top: -101px;
+	background-size: 100%;
+	background-image: url(../img/guide.png)
+}
+
+.overlays {
+	position: absolute;
+	width: 101%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,.86)
+}
+
+.overlays.goods-mask {
+	background-color: rgba(252,243,216,.85)
+}
+
+.overlays .overlay {
+	position: absolute;
+	width: 320px;
+	height: 504px;
+	top: 0;
+	left: 50%;
+	-webkit-transform-origin: 0 0
+}
+
+.overlays .overlay.ticket .close {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 4.5px;
+	right: 4.5px;
+	display: block;
+	cursor: pointer
+}
+
+.overlays .overlay.goods {
+	padding: 243px 43px 0;
+	color: #201f1f;
+	background-image: url(../img/goods-bg.png)
+}
+
+.overlays .overlay.goods.type2 {
+	padding: 125px 43px 0;
+	background-image: url(../img/goods-bg-2.png)
+}
+
+.overlays .overlay.goods.type2 .image {
+	position: absolute;
+	left: 43px;
+	top: 101px;
+	width: 95px;
+	height: 180px
+}
+
+.overlays .overlay.goods.type2 .name {
+	margin-top: 0;
+	margin-left: 100px
+}
+
+.overlays .overlay.goods.type2 .price {
+	margin-top: 70px
+}
+
+.overlays .overlay.goods.type2 .tip {
+	margin-top: 17.5px
+}
+
+.overlays .overlay.goods.type2 .desc {
+	margin-top: 35px
+}
+
+.overlays .overlay.goods .close {
+	display: block;
+	background-size: 12px 12px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 0;
+	top: 10px;
+	background-image: url(../img/close-dark.png);
+	z-index: 8
+}
+
+.J_loading .logo,.J_loading .logo .logo-inner {
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat
+}
+
+.overlays .overlay.goods .name {
+	margin-top: 15px;
+	font-size: 17px;
+	line-height: 21px;
+	text-align: center;
+	height: 42px;
+	overflow: hidden
+}
+
+.overlays .overlay.goods .image {
+	position: absolute;
+	left: 42.5px;
+	top: 100px;
+	width: 235px;
+	height: 139px
+}
+
+.overlays .overlay.goods .no {
+	float: left;
+	font-size: 11px;
+	line-height: 15px;
+	padding-top: 3px
+}
+
+.overlays .overlay.goods .price {
+	text-align: right;
+	font-size: 15px;
+	line-height: 15px;
+	color: #cf1f26
+}
+
+.overlays .overlay.goods .tip {
+	margin-top: 10px;
+	text-align: right;
+	font-size: 9px;
+	line-height: 9px
+}
+
+.overlays .overlay.goods .desc {
+	overflow: hidden;
+	max-height: 66px;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: justify;
+	margin-top: 6px
+}
+
+.overlays .overlay.goods .btns {
+	padding: 0 32px;
+	position: absolute;
+	bottom: 40px;
+	left: 43px
+}
+
+.overlays .overlay.goods .btns a {
+	display: inline-block;
+	font-size: 12px;
+	color: #393737;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	background-color: #fff;
+	padding: 0 8px;
+	text-decoration: none;
+	border-radius: 4px
+}
+
+.overlays .overlay.goods .btns a:active {
+	background-color: #ddd
+}
+
+.overlays .overlay.goods .btns a:nth-child(1) {
+	margin-right: 40px
+}
+
+.overlays .overlay.goods .btns a:nth-child(2) {
+	color: #fff;
+	background-color: #fe7775
+}
+
+.overlays .overlay.goods .btns a:nth-child(2):active {
+	background-color: #FE2C32
+}
+
+.J_loading {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	outline: 0;
+	z-index: 10;
+	background-color: #fff
+}
+
+.J_loading .logo {
+	height: 100px;
+	width: 75px;
+	background-position: center;
+	background-image: url(../img/jd-dog.png);
+	top: 50%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -38px
+}
+
+.J_loading .logo .logo-inner {
+	opacity: 0;
+	width: 38px;
+	height: 70px;
+	

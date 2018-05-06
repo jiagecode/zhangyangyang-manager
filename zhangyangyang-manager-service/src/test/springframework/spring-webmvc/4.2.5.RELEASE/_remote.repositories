@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Aug 03 14:31:26 CST 2016
+spring-webmvc-4.2.5.RELEASE.jar>nexus=
+spring-webmvc-4.2.5.RELEASE.jar>central=
+spring-webmvc-4.2.5.RELEASE.pom>central=
+spring-webmvc-4.2.5.RELEASE-sources.jar>nexus=
+spring-webmvc-4.2.5.RELEASE-javadoc.jar>nexus=
+spring-webmvc-4.2.5.RELEASE.pom>nexus=

@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.zhangyangyang</groupId>
+		<artifactId>zhangyangyang-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.zhangyangyang</groupId>
+	<artifactId>zhangyangyang-manager</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>zhangyangyang-manager-pojo</module>
+		<module>zhangyangyang-manager-mapper</module>
+		<module>zhangyangyang-manager-service</module>
+		<module>zhangyangyang-manager-controller</module>
+	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.zhangyangyang</groupId>
+			<artifactId>zhangyangyang-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<!-- 配置列表 -->
+		<plugins>
+			<!-- 配置 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<port>8080</port>
+					<path>/zhangyangyang</path>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

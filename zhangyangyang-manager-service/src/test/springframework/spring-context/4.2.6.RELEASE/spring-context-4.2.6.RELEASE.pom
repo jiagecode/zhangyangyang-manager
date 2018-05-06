@@ -1,0 +1,170 @@
+showPageFunction[2] = function(){
+	
+	var pageObj = pages[2];
+	
+	pageObj.find(".J_button").click(function(){
+		goPage(3);
+	});
+
+	var picList = [
+	       "<p>陈晓：</p><p>希望有情人都能和自己爱的人在一起。</p>",
+	       "<p>陈妍希：</p><p>我觉得在爱情里最重要的就是陪伴，</p><p>无论心灵上的陪伴还是真正在彼此身边的陪伴。</p>",
+	       "<p>陈燃：</p><p>爱情，就是在彼此的迁就中磨合和成长</p><p>然后成熟，发芽结果。</p>",
+	       "<p>白敬亭：怎么表白？</p><p>我把自己裱起来，算是裱“白”了吧。</p>",
+	       "<p>尚雯婕：对于事业和爱情有一点是共同的，</p><p>要保有一颗童心，</p><p>要有十年如一日的新鲜感和好奇心。</p>",
+	       "<p><img src=\"static/images/p2/pics/9_show.png\"></p>",
+	       "<p>苏运莹：</p><p>选择了就不要后悔。</p>",
+	       "<p>王鸥：</p><p>爱情里最重要的是勇敢和担当。</p><p>当然，陪伴最难得。</p>",
+	       "<p>杨佑宁：</p><p>祝福每对情侣在平常生活中都能拥有最好的彼此。</p>",
+	       "<p>张俪：</p><p>愿爱你的人更爱你，你爱的人更懂你。</p>",
+	       ];
+	
+	var css = {
+			0 : { "width" : getW(280), "height" : getH(388), "x" : getW(12),  "y" : getH(52), "index" : 10 },
+			1 : { "width" : getW(280), "height" : getH(388), "x" : getW(12),  "y" : getH(52), "index" : 11 },
+			2 : { "width" : getW(320), "height" : getH(442), "x" : getW(72),  "y" : getH(26), "index" : 12 },
+			3 : { "width" : getW(357), "height" : getH(494), "x" : getW(142), "y" : getH(0),  "index" : 13 },
+			4 : { "width" : getW(320), "height" : getH(442), "x" : getW(248), "y" : getH(26), "index" : 12 },
+			5 : { "width" : getW(280), "height" : getH(388), "x" : getW(349), "y" : getH(52), "index" : 11 },
+			6 : { "width" : getW(280), "height" : getH(388), "x" : getW(349), "y" : getH(52), "index" : 10 },
+	};
+	
+	var canvasObj = pageObj.find("#J_picList:first");
+	
+	var canvas = canvasObj.get(0);
+	
+	canvas.width = canvasObj.width();
+	canvas.height = canvasObj.height();
+	
+	var ctx = canvas.getContext('2d');
+	
+	var picNums = picList.length;
+	
+	var pics = {};
+	
+	var loaded = 0;
+
+	for (var i = 0; i < picNums; i++) {
+		var imgObj = new Image();
+		imgObj.src = "static/images/p2/pics/" + i + ".jpg";
+		imgObj.onload = (function(){
+			pics[i] = imgObj;
+			loaded++;
+		})(i);
+	}
+	
+	var showNowId = 0;
+	
+	var showPics = {};
+	
+	var inited = false;
+	
+	function updateShowPics() {
+		showPics = {
+				0 : (showNowId - 3) < 0 ? picNums - 3 : showNowId - 3,
+				1 : (showNowId - 2) < 0 ? picNums - 2 : showNowId - 2,
+				2 : (showNowId - 1) < 0 ? picNums - 1 : showNowId - 1,
+				3 : showNowId,
+				4 : (showNowId + 1) % picNums,
+				5 : (showNowId + 2) % picNums,
+				6 : (showNowId + 3) % picNums,
+		}
+	}
+	
+	var loadInterval = setInterval(function() {
+		if (loaded != picNums) {
+			return;
+		}
+		
+		clearInterval(loadInterval);
+		
+		updateShowPics();
+		
+		var index = 0;
+		
+		for (var i in showPics) {
+			var nowCss = css[i];
+			
+			ctx.beginPath();
+			
+			if (index < nowCss.index) {
+				ctx.globalCompositeOperation = "source-over";
+			} else {
+				ctx.globalCompositeOperation = "destination-over";
+			}
+			
+			index = nowCss.index;
+			
+			ctx.drawImage(pics[showPics[i]], nowCss.x, nowCss.y, nowCss.width, nowCss.height);
+			
+			ctx.fill();
+		}
+		
+		inited = true;
+	}, 100);
+	
+	function dradImage(runNum, maxRunNum, toLeft) {
+		var index = 0;
+		
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		
+		for (var i = 0; i <= 6; i++) {
+			var nowCss = css[i];
+			var nextCss = css[toLeft ? i - 1 : i + 1];
+			
+			if (typeof nextCss == "undefined") {
+				continue;
+			}
+
+			ctx.beginPath();
+
+			if (index < nowCss.index) {
+				ctx.globalCompositeOperation = "source-over";
+			} else {
+				ctx.globalCompositeOperation =  "destination-over";
+			}
+			
+			index = nowCss.index;
+			
+			var x = (nowCss.x - nextCss.x) / maxRunNum * runNum;
+			var y = (nowCss.y - nextCss.y) / maxRunNum * runNum;
+			var width = (nowCss.width - nextCss.width) / maxRunNum * runNum;
+			var height = (nowCss.height - nextCss.height) / maxRunNum * runNum;
+			
+			ctx.drawImage(pics[showPics[i]], nextCss.x + x, nextCss.y + y, nextCss.width + width, nextCss.height + height);
+			
+			ctx.fill();
+		}
+	}
+	
+	var runNum = 1;
+	var maxRunNum = 60;
+
+	var startX = null;
+	var nowX = null;
+
+	var mouseDown = false;
+	
+	var toLeft = false;
+
+	var animationId;
+	
+	pageObj.find("#J_text").html(picList[showNowId]);
+	
+	canvasObj.off('mousedown touchstart mousemove touchmove mouseup touchend mouseout').on('mousedown touchstart', function(e){
+		e.stopPropagation();
+		if (event.type == "touchstart") {
+			startX = window.event.touches[0].pageX;
+		} else {
+			startX = e.x || e.pageX;
+			mouseDown = true;
+		}
+	}).on('mousemove touchmove', function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		if (e.type == "touchmove") {
+			nowX = window.event.touches[0].pageX;
+		} else if (mouseDown) {
+			nowX = e.x || e.pageX;
+		}
+	}).on('mouseup touche

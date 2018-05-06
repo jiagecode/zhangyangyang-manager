@@ -1,0 +1,29 @@
+(function(){
+	var canvas = $("#J_bg").get(0);
+	
+	var w = $(window).width();
+	var h = $(window).height();
+	
+	canvas.width = w;
+	canvas.height = h;
+
+	var ctx = canvas.getContext('2d');
+	ctx.globalCompositeOperation = 'lighter';
+	
+	var stars = [];
+
+	var starCanvasObj = $("#J_starCanvas");
+	
+	var starCanvas;
+	
+	var starMax = 100;
+	
+	if (starCanvasObj.length == 0) {
+		starCanvas = document.createElement('canvas');
+		starCanvas.id = "J_starCanvas";
+		starCanvas.width = starCanvas.height = 100;
+		
+		var ctx2 = starCanvas.getContext('2d');
+		var half = starCanvas.width / 2;
+
+		va

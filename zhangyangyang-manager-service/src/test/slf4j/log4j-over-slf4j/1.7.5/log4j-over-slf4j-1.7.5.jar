@@ -1,0 +1,724 @@
+imation:2s linear infinite snowa;
+}
+.snowa03{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+.snowa04{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+.snowa05{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+.snowa06{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+.snowa07{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+.snowa08{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+.snowa09{
+    animation:2s linear infinite snowa;
+    -webkit-animation:2s linear infinite snowa;
+}
+@keyframes snowa{
+    0%{ transform:rotate(0deg);}
+    100%{ transform:rotate(360deg);}
+}
+@-webkit-keyframes snowa{
+    0%{ -webkit-transform:rotate(0deg);}
+    100%{ -webkit-transform:rotate(360deg);}
+}
+/*第一页修改雪花动画-----------------------------------------------------------------*/
+
+img{
+    display: block;
+}
+.mainImg{
+    width: 100%;
+}
+.round01{
+    width: 18%;
+    position: absolute;
+    left: 0.8rem;
+    top: 5rem;
+    /*opacity:0*/
+}
+
+.animation01{
+    animation:2.5s 0.5s linear  musicMovea forwards;
+    -webkit-animation:2.5s 0.5s linear  musicMovea forwards;
+}
+.animation03{
+    animation:2.5s 1s linear  musicMovea forwards;
+    -webkit-animation:2.5s 1s linear  musicMovea forwards;
+}
+.animation05{
+    animation:2.5s 1.5s linear  musicMovea forwards;
+    -webkit-animation:2.5s 1.5s linear  musicMovea forwards;
+}
+.animation07{
+    animation:2.5s 2s linear  musicMovea forwards;
+    -webkit-animation:2.5s 2s linear  musicMovea forwards;
+}
+.animation09{
+    animation:2.5s 2.5s linear  musicMovea forwards;
+    -webkit-animation:2.5s 2.5s linear  musicMovea forwards;
+}
+.animation11{
+    animation:2.5s 3s linear  musicMovea forwards;
+    -webkit-animation:2.5s 3s linear  musicMovea forwards;
+}
+.animation13{
+    animation:2.5s 3.5s linear  musicMovea forwards;
+    -webkit-animation:2.5s 3.5s linear  musicMovea forwards;
+}
+.animation15{
+    animation:2.5s 4s linear  musicMovea forwards;
+    -webkit-animation:2.5s 4s linear  musicMovea forwards;
+}
+@keyframes musicMovea{
+    0%{ transform:rotateY(0deg);}
+    100%{ transform:rotateY(180deg);
+          opacity: 0;
+    }
+}
+@-webkit-keyframes musicMovea{
+    0%{ -webkit-transform:rotateY(0deg);}
+    100%{ -webkit-transform:rotateY(180deg);
+          opacity: 0;
+    }
+}
+/*------------------------------------------------------------------------------------*/
+.animation02{
+    animation:2.5s 0.5s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 0.5s linear  musicMoveb forwards;
+}
+.animation04{
+    animation:2.5s 1s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 1s linear  musicMoveb forwards;
+}
+.animation06{
+    animation:2.5s 1.5s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 1.5s linear  musicMoveb forwards;
+}
+.animation08{
+    animation:2.5s 2s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 2s linear  musicMoveb forwards;
+}
+.animation10{
+     animation:2.5s 2.5s linear  musicMoveb forwards;
+     -webkit-animation:2.5s 2.5s linear  musicMoveb forwards;
+ }
+.animation12{
+    animation:2.5s 3s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 3s linear  musicMoveb forwards;
+}
+.animation14{
+    animation:2.5s 3.5s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 3.5s linear  musicMoveb forwards;
+}
+.animation16{
+    animation:2.5s 4s linear  musicMoveb forwards;
+    -webkit-animation:2.5s 4s linear  musicMoveb forwards;
+}
+@keyframes musicMoveb{
+    0%{ transform:rotateY(0deg);}
+    100%{ transform:rotateY(180deg);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes musicMoveb{
+    0%{ -webkit-transform:rotateY(0deg);}
+    100%{ -webkit-transform:rotateY(180deg);
+        opacity: 1;
+    }
+}
+/*------------------------------------------------------------------------------------*/
+.round02{
+    width: 18%;
+    position: absolute;
+    right: 0.5rem;
+    top: 10.8rem;
+}
+.round03{
+    width: 18%;
+    position: absolute;
+    left: 0.8rem;
+    top: 16.4rem;
+}
+.round04{
+    width: 18%;
+    position: absolute;
+    right: 0.5rem;
+    top: 22.5rem;
+}
+.round05{
+    width: 18%;
+    position: absolute;
+    left: 0.8rem;
+    top: 28rem;
+}
+.round06{
+    width: 18%;
+    position: absolute;
+    right: 0.5rem;
+    top: 33.6rem;
+}
+.round07{
+    width: 18%;
+    position: absolute;
+    left: 0.8rem;
+    top: 39.6rem;
+}
+.round08{
+    width: 18%;
+    position: absolute;
+    right: 0.5rem;
+    top: 46rem;
+}
+.abtn{
+    width: 56%;
+    position: absolute;
+    left: 50%;
+    top: 53rem;
+    margin-left: -28%;
+}
+.hand01{
+    width: 10%;
+    position: absolute;
+    top: 54rem;
+    left: 75%;
+    -webkit-animation:shoushi 1s linear infinite alternate;
+}
+@-webkit-keyframes shoushi {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+/*------------------�϶����ָ�����ת--------------------------------------------------------------------*/
+#drag{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background: url("../img/dragbackground02.jpg") no-repeat  center center;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.door01{
+    width:58%;
+    height:39%;
+    position:absolute;
+    background: url("../img/door01.png") no-repeat  center center;
+    background-size: 100% 100%;
+    top: 3%;
+    left: 50%;
+    margin-left: -29%;
+    z-index: 1;
+}
+.door02{
+    width:58%;
+    height:39%;
+    position:absolute;
+    background: url("../img/door02.png") no-repeat  center center;
+    background-size: 100% 100%;
+    top: 3%;
+    left: 50%;
+    margin-left: -29%;
+    display: none;
+    z-index: 1;
+}
+.cloud01{
+    width:17%;
+    height:7%;
+    position:absolute;
+    background: url("../img/cloud1.png") no-repeat  center center;
+    background-size: 100% 100%;
+    top: 8%;
+    right: 10%;
+    animation: cloudMoveLeft 10s 0.5s linear infinite alternate;/*云移动*/
+    -webkit-animation: cloudMoveLeft 10s 0.5s linear infinite alternate;
+}
+.cloud02{
+    width:11%;
+    height:4%;
+    position:absolute;
+    background: url("../img/cloud2.png") no-repeat  center center;
+    background-size: 100% 100%;
+    top: 15%;
+    left: 10%;
+    animation: cloudMoveRight 10s linear infinite alternate; /*云移动*/
+    -webkit-animation: cloudMoveRight 10s linear infinite alternate;
+}
+.caps{
+    width: 20%;
+    height: 12%;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    z-index: 3;
+}
+.hand02{
+    width: 13%;
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    -webkit-animation: point 1.5s ease 0.6s infinite;
+}
+@-webkit-keyframes point{
+    0% { -webkit-transform: translate(0,0); opacity:0;}
+    50% { -webkit-transform: translate(20px,-80px); opacity:1;}
+    100% { -webkit-transform: translate(50px,-180px); opacity:0;}
+}
+/*-----------------�϶����ָ�����ת---------------------------------------------------------------------*/
+
+/*云*/
+@-webkit-keyframes cloudMoveLeft{
+    0%{ 
+        -webkit-transform:translate(0);
+    }
+    50%{ 
+        -webkit-transform:translate(-70px);
+    }
+    100%{ 
+        -webkit-transform:translate(70px);
+    }
+}
+    @keyframes cloudMoveLeft{
+    0%{
+        transform:translate(0);
+    }
+    50%{
+        transform:translate(-70px);
+    }
+    100%{
+        transform:translate(70px);
+    }
+    }
+
+@-webkit-keyframes cloudMoveRight{
+    0%{
+        -webkit-transform:translate(0);
+    }
+    50%{
+        -webkit-transform:translate(70px);
+    }
+    100%{
+        -webkit-transform:translate(-70px);
+    }
+}
+    @keyframes cloudMoveRight{
+    0%{
+        transform:translate(0);
+    }
+    50%{
+        transform:translate(70px);
+    }
+    100%{
+        transform:translate(-70px);
+    }
+    }
+
+
+/*加载页面--------------------------------------------------------------*/
+.loadingBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*background-color: #ffffff;*/
+    background-color: #df051e;
+    z-index: 100;
+}
+.pictures img{
+    margin: 100px auto;
+    width: 511px;
+    height: 186px;
+    position: absolute;
+    left: 50%;
+    top: -238%;
+    margin-left: -256px;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.loadingText{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 153px;/*200*/
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 26px;
+}
+
+/*加载页面-----------------------------------------------------------------*/
+
+/*音乐-----------------------------------------------------------------*/
+#music{
+    width:9.3%;
+    height:5.95%;
+    background:url(../img/music_note_big.png) no-repeat;
+    background-size:cover;
+    position:fixed;
+    top:8%;
+    right:6%;
+    z-index:20;
+}
+#music.active{
+    animation:1s linear infinite musicMove;
+    -webkit-animation:1s linear infinite musicMove;
+}
+@keyframes musicMove{
+    0%{ transform:rotate(0deg);}
+    100%{ transform:rotate(360deg);}
+}
+@-webkit-keyframes musicMove{
+    0%{ -webkit-transform:rotate(0deg);}
+    100%{ -webkit-transform:rotate(360deg);}
+}
+
+/*音乐-----------------------------------------------------------------*/
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 /**
+ * 扩展日期类，增加格式化
+ * @param fmt 格式化文本
+ * @returns 格式化后的时间
+ */
+Date.prototype.format = function (fmt) { //author: meizz 
+    var o = {
+        "Y+": this.getFullYear(), //完整年份
+        "y+": this.getFullYear() % 100, //年份后2位 
+        "m+": this.getMonth() + 1, //月份 
+        "M+": this.getMonth() + 1, //月份
+        "D+": this.getDate(), //日 
+        "d+": this.getDate(), //日 
+        "H+": this.getHours(), //小时 
+        "h+": this.getHours(), //小时  
+        "I+": this.getMinutes(), //分 
+        "i+": this.getMinutes(), //分 
+        "s+": this.getSeconds(), //秒 
+        "S+": this.getMilliseconds() //毫秒 
+    };
+    for (var k in o) {
+        if (new RegExp("(" + k + ")").test(fmt)) {
+        	fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (((k == "Y+" ? "0000" : "00") + o[k]).substr(("" + o[k]).length)));
+        }
+    }
+    return fmt;
+}
+
+window.util = {
+		
+	query : {
+		get : function(name) {
+			var u = arguments[1] || window.location.search;
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r = u.substr(u.indexOf("\?") + 1).match(reg);
+			return r != null ? r[2] : "";
+		},
+			
+		set: function(data) {
+			var url = arguments[1] || null;
+			var hash = url ? url.match(/#.*/) && url.match(/#.*/)[0] || "" : location.hash;
+			var search = url ? url.replace(/#.*/, "").match(/\?.*/) && url.replace(/#.*/, "").match(/\?.*/)[0] || "" : location.search;
+			var path = url ? url.replace(/#.*/, "").replace(/\?.*/, "") : location.protocol + "//" + location.host + location.pathname;
+			var query;
+			var oldValue;
+			for (var i in data) {
+				query = i + "=" + data[i];
+				oldValue = this.get(i, search);
+				if (oldValue) {
+					search = search.replace(i + "=" + oldValue, i + "=" + data[i]);
+				} else {
+					search = (search.length > 0) ? search + "&" + query : "?" + query;
+				}
+			}
+			return path + search + hash;
+		},
+		
+		remove : function(key) {
+			var url = arguments[1] || window.location.href;
+			url = url + "";
+			
+			if (url.indexOf("?") == -1 || url.indexOf("&" + key + "=") == -1) {
+				return url;
+			}
+			
+			if (url.indexOf('&') == -1) {
+				return url.substring(0, url.indexOf("?"));
+			}
+			
+			var path = url.substring(0, url.indexOf("?") + 1);
+			var query = url.substring(url.indexOf("?") + 1);
+			var hash = url.match(/#.*/) && url.match(/#.*/)[0] || "";
+			var params = query.split('&');
+			
+			for (var i = 0; i < params.length; i++) {
+				var p = params[i];
+				if (p.indexOf(key + "=") == -1) {
+					path += p + "&";
+					continue;
+				}
+			}
+
+			if (path.endsWith("&")) {
+				path = path.substring(0, path.length - 1);
+			}
+			
+			return path + hash;
+        },
+	},
+		
+	cookie : {
+		get: function(name) {
+			var reg = new RegExp("(^| )" + name + "(?:=([^;]*))?(;|$)");
+			var val = document.cookie.match(reg);
+			return val ? (val[2] ? unescape(val[2]) : "") : null;
+		},
+
+		set: function(name, value) {
+			var exp = new Date();
+			var expires = arguments[2] || null;
+			var path = arguments[3] || "/";
+			var domain = arguments[4] || null; 
+			var secure = arguments[5] || false;
+			expires ? exp.setMinutes(exp.getMinutes() + parseInt(expires)) : "";
+			document.cookie = name + '=' + escape(value) + (expires ? ';expires=' + exp.toGMTString() : '') + (path ? ';path=' + path : '') + (domain ? ';domain=' + domain : '') + (secure ? ';secure' : '');
+		},
+			
+		delCookie: function(name) {
+			var path = arguments[3] || "/";
+			var domain = arguments[4] || null; 
+			var secure = arguments[5] || false;
+			var value = util.getCookie(name);
+			if (value != null) {
+				var exp = new Date();
+				exp.setMinutes(exp.getMinutes() - 1000);
+				path = path || "/";
+				document.cookie = name + '=;expires=' + exp.toGMTString() + (path ? ';path=' + path : '') + (domain ? ';domain=' + domain : '') + (secure ? ';secure' : '');
+			}
+		},
+	},
+
+	hash : {
+		get: function(name) {
+			var u = arguments[1] || location.hash;
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r = u.substr(u.indexOf("#") + 1).match(reg);
+			return r == null ? "" : r[2];
+		},
+	},
+		
+	html : {
+		encode : function(str) {
+			return typeof(str) != "string" ? "" : str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;").replace(/\'/g, "&apos;").replace(/ /g, "&nbsp;");
+		},
+		decode: function(str) {
+			return typeof(str) != "string" ? "" : str.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, "\"").replace(/&nbsp;/g, " ").replace(/&#39;/g, "'").replace(/&amp;/g, "&");
+		},
+	},
+		
+	storage : {
+		support : function() {
+			return window.localStorage;
+		},	
+		get : function(key) {
+			return window.localStorage.getItem(key);
+		},
+		set: function(key, value, isJson) {
+			window.localStorage.setItem(key, isJson ? JSON.stringify(value) : value);
+		},
+		remove : function(key) {
+			window.localStorage.removeItem(key);
+		},
+	},
+
+	array : {
+		uniq: function(arr) {
+			var returnArr = [];
+			for (var i = 0, len = arr.length; i < len; i++) {
+				(("," + returnArr + ",").indexOf("," + arr[i] + ",") < 0) ? returnArr.push(arr[i]): '';
+			};
+			return returnArr;
+		},
+	},
+		
+	loader : {
+		js : function(url) {
+			var option = {
+				onLoad: null,
+				onError: null,
+				onTimeout: null,
+				timeout: 8000,
+				isToken: false,
+				charset: "utf-8",
+			};
+			var opt;
+			if (arguments.length == 1) {
+				if (typeof arguments[0] == "object") {
+					opt = arguments[0];
+					url = opt.url;
+				} else {
+					opt = {};
+				}
+			} else {
+				opt = arguments[1];
+			}
+			if (typeof opt.data == 'object') {
+				var param = [];
+				for (var k in opt.data) {
+					param.push(k + '=' + opt.data[k])
+				}
+				if (param.length > 0) {
+					param = param.join('&');
+					url += (url.indexOf('?') > 0 ? '&' : '?') + param;
+				}
+			}
+			for (var i in opt) {
+				if (opt.hasOwnProperty(i)) {
+					option[i] = opt[i];
+				}
+			}
+			var clear = function() {
+				if (!el) {
+					return;
+				}
+				el.onload = el.onreadystatechange = el.onerror = null;
+				el.parentNode && (el.parentNode.removeChild(el));
+				el = null;
+			};
+			var el = document.createElement("script");
+			el.charset = option.charset || "utf-8";
+			el.onload = el.onreadystatechange = function() {
+				if (/loaded|complete/i.test(this.readyState) || navigator.userAgent.toLowerCase().indexOf("msie") == -1) {
+					option.onLoad && option.onLoad();
+					clear();
+				}
+			};
+			el.onerror = function() {
+				option.onError && option.onError();
+				clear();
+			};
+			el.src = url;
+			document.getElementsByTagName('head')[0].appendChild(el);
+			if (typeof option.onTimeout == "function") {
+				setTimeout(function() {
+					option.onTimeout();
+				}, option.timeout);
+			}
+		},
+	},
+		
+	template : {
+		cache : {},
+		parse : function(str, data) {
+			var fn = !/\W/.test(str) ? 
+				this.cache[str] = this.cache[str] || this.parse(document.getElementById(str).innerHTML) :
+				new Function("obj",
+					"var p=[],print=function(){p.push.apply(p,arguments);};" +
+					"with(obj){p.push('" + str
+					.replace(/[\r\t\n]/g, " ")
+					.split("<%").join("\t")
+					.replace(/((^|%>)[^\t]*)'/g, "$1\r")
+					.replace(/\t=(.*?)%>/g, "',$1,'")
+					.split("\t").join("');")
+					.split("%>").join("p.push('")
+					.split("\r").join("\\'") + "');}return p.join('');");
+			return data ? fn(data) : fn;
+		},
+	},
+	
+	xss : function(str, type) {
+		if (!str) {
+			return str === 0 ? "0" : "";
+		}
+		switch (type) {
+			case "none":
+				return str + "";
+				break;
+			case "html":
+				return str.replace(/[&'"<>\/\\\-\x00-\x09\x0b-\x0c\x1f\x80-\xff]/g, function(r) {
+					return "&#" + r.charCodeAt(0) + ";";
+				}).replace(/ /g, "&nbsp;").replace(/\r\n/g, "<br />").replace(/\n/g, "<br />").replace(/\r/g, "<br />");
+				break;
+			case "htmlEp":
+				return str.replace(/[&'"<>\/\\\-\x00-\x1f\x80-\xff]/g, function(r) {
+					return "&#" + r.charCodeAt(0) + ";";
+				});
+				break;
+			case "url":
+				return escape(str).replace(/\+/g, "%2B");
+				break;
+			case "miniUrl":
+				return str.replace(/%/g, "%25");
+				break;
+			case "script":
+				return str.replace(/[\\"']/g, function(r) {
+					return "\\" + r;
+				}).replace(/%/g, "\\x25").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\x01/g, "\\x01");
+				break;
+			case "reg":
+				return str.replace(/[\\\^\$\*\+\?\{\}\.\(\)\[\]]/g, function(a) {
+					return "\\" + a;
+				});
+				break;
+			default:
+				return escape(str).replace(/[&'"<>\/\\\-\x00-\x09\x0b-\x0c\x1f\x80-\xff]/g, function(r) {
+					return "&#" + r.charCodeAt(0) + ";";
+				}).replace(/ /g, "&nbsp;").replace(/\r\n/g, "<br />").replace(/\n/g, "<br />").replace(/\r/g, "<br />");
+			break;
+		}
+	},
+	
+	countdown : function(callback, time) {
+		time = parseInt(time);
+		if (time <= 0 || typeof callback != 'function') {
+			return;
+		}
+		
+		var end = (new Date()).getTime() + time;
+		var intervalID = setInterval(function() {
+			var times = end = (new Date()).getTime();
+			callback(times);
+			if (times <= 0) {
+				clearInterval(intervalID);
+			}
+		}, 100);
+	},
+	
+	uuid : function() {
+		var s = [];
+		var hexDigits = "0123456789abcdef";
+		for (var i = 0; i < 36; i++) {
+			s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+		}
+		s[14] = "4";
+		s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);
+		s[8] = s[13] = s[18] = s[23] = "-";
+
+		return s.join("");
+	}
+};
+                                                                                                                                                                 

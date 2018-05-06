@@ -1,0 +1,25 @@
+$(function(){
+	$('#J_page_apply .button p').on('click', function(){
+		var name = $('#J_page_apply #J_name').val();
+		var unit = $('#J_page_apply #J_unit').val();
+		var tel = $('#J_page_apply #J_tel').val();
+	
+        var regTel = /^0[\d]{2,3}-[\d]{7,8}$/;
+		
+		if (name == "") {
+			alert('姓名不能为空');
+			$('#J_page_apply #J_name').focus();
+		} else if (unit == "") {
+			alert('单位不能为空');
+			$('#J_page_apply #J_unit').focus();
+		} else if (tel == "") {
+			alert('联系方式不能为空');
+			$('#J_page_apply #J_tel').focus();
+		} else if (regTel.test(tel)) {
+			alert('请填写正确的联系方式');
+			$('#J_page_apply #J_tel').focus();
+		} else {
+			$.ajax({
+				type : 'POST',
+				url : "http://www.ei-marketing.cn:8080/jdyqh20150828/service/apply?" + Math.random(),
+				url2 : "http://192.
