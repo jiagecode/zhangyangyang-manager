@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util-4.2.xsd   
+    	http://www.springframework.org/schema/tx   
+    	http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+    	http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd ">
+	
+	
+	<!-- dao层配置 ==== dao层配置==== dao层配置==== dao层配置==== dao层配置==== dao层配置==== dao层配置 -->
+	<!-- 1.引入配置文件 -->
+	<!-- 使用方法详解：http://blog.csdn.net/wandong01/article/details/48243325 -->
+	<util:properties id="jdbc" location="classpath:resource/db.properties" />
+
+	<!-- 2.数据源 使用阿里Druid数据源 也可以用其它数据源。destroy-method="close"的作用是当数据库连接不使用的时候,就把该连接重新放到数据池中,方便下次使用调用 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		init-method="init" destroy-method="close">
+		<!-- 基本属性 url、user、password -->
+		<property name="url" value="#{jdbc.url}"></property>
+		<property name="driverClassName" value="#{jdbc.driverClassName}"></property>
+		<property name="username" value="#{jdbc.username}"></property>
+		<property name="password" value="#{jdbc.password}"></property>
+
+		<!-- 配置初始化大小、最小、最大 -->
+		<property name="maxActive" value="20" />
+		<property name="initialSize" value="4" />
+		<property name="maxWait" value="60000" />
+		<property name="minIdle" value="1" />
+
+		<!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+		<!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		<!-- mysql 不支持 poolPreparedStatements -->
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize"
+			value="50" />
+
+		<!-- 开启Druid的监控统计功能 -->
+		<property name="filters" value="stat" />
+	</bean>
+
+	<!-- 3.配置SqlSessionFactoty -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
+		<!-- <property name="mapperLocations" value="com.zhangyangyang.mapper/*.xml"></property> -->
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<!-- 4.配置扫描包加载mapper代理对象  -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.zhangyangyang.mapper"></property>
+	</bean>
+	
+	
+	<!-- service层配置 ==== service层配置==== service层配置==== service层配置==== service层配置==== service层配置==== service层配置 -->
+	<!-- 1.扫描包扫描service实现类 -->
+	<context:component-scan base-package="com.zhangyangyang.service" />
+	
+	<!-- trans事务配置  -->
+	<!-- 2.事务配置 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!-- 数据源 -->
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<!-- 通知 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+		
+			<!-- REQUIRED:支持当前事务，如果当前没有事务，就新建一个事务。这是最常见的选择。 -->
+			<tx:method name="save*" propagation="REQUIRED"/>
+			<tx:method name="insert*" propagation="REQUIRED"/>
+			<tx:method name="add*" propagation="REQUIRED"/>
+			<tx:method name="create*" propagation="REQUIRED"/>
+			<tx:method name="delete*" propagation="REQUIRED"/>
+			<tx:method name="update*" propagation="REQUIRED"/>
+			
+			<!--  SUPPORTS:支持当前事务，如果当前没有事务，就以非事务方式执行。  -->
+			<!-- read-only	不	false	事务是否只读？ -->
+			<tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="select" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+			
+			<!-- PROPAGATION_MANDATORY：      支持当前事务，如果当前没有事务，就抛出异常 -->
+			<!-- PROPAGATION_REQUIRES_NEW：   新建事务，如果当前存在事务，把当前事务挂起。 -->
+			<!-- PROPAGATION_NOT_SUPPORTED：以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。 -->
+			<!-- PROPAGATION_NEVER：               以非事务方式执行，如果当前存在事务，则抛出异常。  -->
+			<!-- PROPAGATION_NESTED：              支持当前事务，如果当前事务存在，则执行一个嵌套事务，如果当前没有事务，就新建一个事务。 -->
+		</tx:attributes>
+	</tx:advice>
+	
+	<!-- 3.切面aop -->
+	<aop:config>
+		<!-- pointcut:切面表达式。execution(* com.zhangyangyang.service.*.*(..))，第一个*表示任何返回值，在com.zhangyangyang.service包下，第二个*表示任何类 下，第三个*表示任何方法名 中的（..）表示任何参数，都会被拦截 -->
+		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.zhangyangyang.service.*.*(..))"/>
+	</aop:config>
+</beans>
